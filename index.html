@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>presse - 3WA</title>
+        <meta href="utf-8">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button>accueil</button>
+            </nav>
+        </header>
+        <main>
+            <label for="tv-theme-choice">vous pouvez faire une recherche ici :</label>
+            <input list="tv-theme" id="tv-theme-choice" />
+            <datalist id="tv-theme">
+                <option value="crime"></option>
+                <option value="virtuel"></option>
+                <option value="nature"></option>
+                <option value="gaming"></option>
+                <option value="routes"></option>
+            </datalist>
+            <dialog open>
+                <form method="dialog"><p>attention : suspect en fuite !</p>
+                    <button>fermer</button>
+                </form>
+            </dialog>
+            <article>
+                <details>
+                    <summary>un prisonnier s'est encore évadé !</summary>
+                    <figure>il a été aperçu pour la dernière fois en prison, et maintenant il est recherché par la police une nouvelle fois.<br>
+                    nous n'avons qu'un portrait robot de son visage, mais pas son nom, prénom, ni comment il a réussi son coup.</figure>
+                </details><br>
+                <img src="leo_helms.png" alt="logo de Léo HELMS">
+                <figcaption>image du suspect</figcaption>
+            </article>
+            <form novalidate class="test">
+                <h2>formulaire de contact</h2>
+                <div class="item">
+                    <label for="client-email">votre adresse mail :</label>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="client-email">
+                </div><div class="item">
+                    <textarea cols="50" rows="4" placeholder="demandez-nous un sujet en particulier !"></textarea>
+                </div><div class="item">
+                    <label for="validate-gcu">j'accepte les CGU</label>
+                    <input type="checkbox" id="validate-gcu" required>
+                </div><div class="item">
+                    <button type="submit">envoyer</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <address>© 2024, presse de la 3W Academy</address>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: grey;
+    margin-top: 20px;
+    color: white;
+}
+
+.item {
+    border-color: 5px red;
+    border: 20px;
+}
+
+.item button {
+    width: 150px;
+}
+
+nav > button {
+    width: 10%;
+}
+
+dialog {
+    color: white;
+    border-radius: 40px;
+    border-color: black 5px;
+    align-content: center;
+    background-color: darkred;
+    font: 50%;
+}
+dialog button {
+    width: 100%;
+    border-color: 3px black;
+    border-radius: 20px;
+    background-color: grey;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background-color: grey;
+}
+
+h2 {
+    text-align: center;
+}
