@@ -1,0 +1,76 @@
+.payement {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: grey;
+    margin-top: 20px;
+    color: white;
+}
+
+.start {
+    display: grid;
+    border-color: 5px red;
+    border: 20px;
+    text-align: left;
+}
+
+.item, .item2 {
+    display: grid;
+    border-color: 5px red;
+    border: 20px;
+    text-align: left;
+}
+
+.item {
+    grid-template-columns: 1fr 1fr;
+}
+
+.item2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item button {
+    width: 150px;
+}
+
+nav > button {
+    width: 10%;
+}
+
+dialog {
+    color: white;
+    border-radius: 40px;
+    border-color: black 5px;
+    align-content: center;
+    background-color: darkred;
+    font: 50%;
+}
+dialog button {
+    width: 100%;
+    border-color: 3px black;
+    border-radius: 20px;
+    background-color: grey;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 18px;
+    background:#807a7a;
+    padding: 5px 15px;
+    bottom: 0;
+    background-color: grey;
+    position: fixed;
+    border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+h2 {
+    text-align: center;
+}
