@@ -10,26 +10,21 @@
     color: white;
 }
 
-.start {
+.item, .grid-banq-card {
     display: grid;
-    border-color: 5px red;
-    border: 20px;
-    text-align: left;
 }
 
-.item, .item2 {
-    display: grid;
-    border-color: 5px red;
-    border: 20px;
-    text-align: left;
-}
 
 .item {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.item2 {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.grid-banq-card {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#client-banq-number1 {
+    grid-column-start: 2;
 }
 
 .item button {
@@ -66,11 +61,45 @@ footer {
     padding: 5px 15px;
     bottom: 0;
     background-color: grey;
-    position: fixed;
+    position: absolute;
     border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 }
 
 h2 {
     text-align: center;
+}
+
+h1 {
+    position: absolute;
+	left: 50%;
+	top: 0px;
+	transform: translate(-50%, 0%);
+	color: #beb;
+	background-color: #888;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	padding: 0px 30px; /* marge interne */
+	opacity: 70%; /* visibilité de l'élément */
+}
+
+header {
+	background-color: #888;
+	padding: 0px 30px; /* marge interne */
+    position: fixed; /* position qui ne bouge pas lorsque l'on navigue sur la page */
+    border-bottom-right-radius: 60px;
+	padding-left: 10px; /* marge interne à gauche */
+}
+
+header a {
+    text-decoration: none;
+	background: #999;
+	color: white;
+	padding: 10px 20px; /* marge interne */
+	margin: 0px 10px; /* marge externe */
+	border-radius: 30px;
+}
+
+header a:hover {
+    background-color: #777;
 }
