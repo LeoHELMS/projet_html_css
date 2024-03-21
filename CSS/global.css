@@ -1,3 +1,12 @@
+header {
+	height: 70px;
+}
+
+
+footer {
+	color: white;
+}
+
 body {
 	background-color: grey;
 }
@@ -15,15 +24,16 @@ h1 {
 	opacity: 70%; /* visibilité de l'élément */
 }
 
-header {
+nav {
 	background-color: #888;
 	padding: 0px 30px; /* marge interne */
     position: fixed; /* position qui ne bouge pas lorsque l'on navigue sur la page */
     border-bottom-right-radius: 60px;
 	padding-left: 10px; /* marge interne à gauche */
+	height: 50px;
 }
 
-header a {
+nav a {
     text-decoration: none;
 	background: #999;
 	color: white;
@@ -32,6 +42,6 @@ header a {
 	border-radius: 30px;
 }
 
-header a:hover {
+nav a:hover {
     background-color: #777;
 }
