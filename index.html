@@ -3,53 +3,66 @@
     <head>
         <title>presse - 3WA</title>
         <meta href="utf-8">
-        <link href="index.css" rel="stylesheet">
+        <link href="css\index.css" rel="stylesheet">
     </head>
     <body>
+
         <header>
             <script src="JS/header.js"></script>
         </header>
         <main>
-            <label for="tv-theme-choice">vous pouvez faire une recherche ici :</label>
-            <input list="tv-theme" id="tv-theme-choice" />
-            <datalist id="tv-theme">
-                <option value="crime"></option>
-                <option value="virtuel"></option>
-                <option value="nature"></option>
-                <option value="gaming"></option>
-                <option value="routes"></option>
-            </datalist>
-            <dialog open>
-                <form method="dialog"><p>attention : suspect en fuite !</p>
-                    <button>fermer</button>
+            <div class="container">
+
+
+
+
+                <article>
+                    <h1>rejoindre la division</h1>
+                    <div class="article-content">
+                        <img src="pictures\capsule_616x353.jpg" alt="Image de l'article">
+                        <!-- class="image-caption">Légende de l'image</-->
+                        <p>
+                            Dans les rues silencieuses et délabrées de Washington D.C., le vent souffle des bruits lointains de chaos. Des immeubles dévastés, autrefois symboles de puissance et de prospérité, se dressent maintenant comme des témoins muets de l'effondrement de la civilisation. Les arbres dénudés oscillent dans une danse macabre, leurs branches griffant le ciel sombre et menaçant.
+
+                            Au loin, le crépitement des flammes et le murmure des rivières polluées composent une symphonie lugubre qui enveloppe la ville autrefois animée. Des silhouettes furtives se faufilent dans les ruelles sombres, leurs pas empreints de méfiance et de peur. Chaque coin de rue dissimule un danger potentiel, chaque ombre cache un ennemi tapi dans l'obscurité.
+
+                            Le soleil, éclipsé par un nuage de fumée toxique, peine à percer l'atmosphère oppressante. Les murs graffités portent les marques de messages désespérés et de symboles de ralliement pour les survivants épars. Les rares lueurs d'espoir sont étouffées par l'omniprésence de la désolation.
+
+                            Pourtant, au milieu de ce chaos déchirant, des agents intrépides se lèvent pour défendre ce qui reste de l'humanité. Leurs armes étincellent dans l'obscurité, leurs pas résonnent comme un écho de défi dans les rues abandonnées. Ils sont les derniers remparts contre le néant, les gardiens de l'espoir dans un monde au bord de l'abîme.
+
+                            Dans les profondeurs de la désolation, l'esprit de résistance brûle encore, alimenté par la volonté inébranlable de ceux qui refusent de plier devant l'obscurité. Dans chaque souffle de vent et chaque battement de cœur résonne l'appel à la lutte, car dans The Division 2, la survie n'est pas un luxe, mais un impératif absolu.</p>
+                    </div>
+                </article>
+            </div>
+
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+                <h1>Formulaire de Contact</h1>
+
+                <p>Bienvenue sur notre site. Utilisez le formulaire ci-dessous pour nous contacter :</p>
+
+                <form action="#" method="post">
+                    <label for="email">Adresse Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="cgu" required>
+                        J'accepte les conditions générales d'utilisation (CGU).
+                    </label>
+
+                    <input type="submit" value="Envoyer">
                 </form>
-            </dialog>
-            <article>
-                <details>
-                    <summary>un prisonnier s'est encore évadé !</summary>
-                    <figure>il a été aperçu pour la dernière fois en prison, et maintenant il est recherché par la police une nouvelle fois.<br>
-                    nous n'avons qu'un portrait robot de son visage, mais pas son nom, prénom, ni comment il a réussi son coup.</figure>
-                </details><br>
-                <img src="leo_helms.png" alt="logo de Léo HELMS">
-                <figcaption>image du suspect</figcaption>
-            </article>
-            <form novalidate class="test">
-                <h2>formulaire de contact</h2>
-                <div class="item">
-                    <label for="client-email">votre adresse mail :</label>
-                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="client-email">
-                </div><div class="item">
-                    <textarea cols="50" rows="4" placeholder="demandez-nous un sujet en particulier !"></textarea>
-                </div><div class="item">
-                    <label for="validate-gcu">j'accepte les CGU</label>
-                    <input type="checkbox" id="validate-gcu" required>
-                </div><div class="item">
-                    <button type="submit">envoyer</button>
-                </div>
-            </form>
+
+
+            </div>
+
+
         </main>
         <footer>
-            <address>© 2024, presse de la 3W Academy</address>
+            <address>copyright 2024, Ubisofty</address>
         </footer>
     </body>
 </html>
