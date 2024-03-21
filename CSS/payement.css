@@ -5,7 +5,6 @@
     align-content: center;
     align-items: center;
     gap: 20px;
-    background-color: grey;
     margin-top: 20px;
     color: white;
 }
@@ -47,7 +46,6 @@ dialog button {
     width: 100%;
     border-color: 3px black;
     border-radius: 20px;
-    background-color: grey;
     color: white;
 }
 
@@ -57,10 +55,9 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     font-size: 18px;
-    background:#807a7a;
+    background:#555;
     padding: 5px 15px;
     bottom: 0;
-    background-color: grey;
     position: absolute;
     border-top-left-radius: 30px;
 	border-top-right-radius: 30px;

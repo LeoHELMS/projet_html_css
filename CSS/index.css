@@ -1,11 +1,10 @@
 body{
-background: linear-gradient(90deg,#000000,#2a2a2a)
-
+    background: linear-gradient(90deg,#000000,#2a2a2a)
 }
+
 h1,p {
- color: #FD6D0E;
+    color: #FD6D0E;
 }
-
 
 .article-content {
     display: flex;
