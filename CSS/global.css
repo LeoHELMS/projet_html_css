@@ -12,7 +12,16 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	height: 70px;
+
 }
+    @media screen and (max-width: 768px) {
+
+     nav a {
+        float: none;
+        display: grid;
+        text-align: left;
+        }
+
 
 nav {
 	background-color: #444;
@@ -34,6 +43,31 @@ nav a {
 
 nav a:hover {
     background-color: #555;
+}
+
+
+}
+
+
+header a {
+	text-decoration: none;
+	background: #999;
+	color: white;
+	padding: 10px 20px; /* Marge interne */
+	margin: 0px 10px; /* Marge externe */
+	border-radius: 30px;
+}
+
+header a:hover {
+	background-color: #777;
+}
+
+/* Médias requêtes pour la conception réactive */
+
+@media screen and (max-width: 768px) {
+	header {
+		padding: 10px; /* Réduire le padding pour les appareils plus petits */
+	}
 }
 
 
