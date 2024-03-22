@@ -1,29 +1,45 @@
-header {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	height: 80px;
-}
-
 body {
 	background: linear-gradient(90deg,#000000,#2a2a2a);
 	margin: 0;
 }
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 70px;
+}
+
+nav {
+	background-color: #444;
+	padding: 0px 0px; /* marge interne */
+    position: fixed;  /* position qui ne bouge pas lorsque l'on navigue sur la page */
+    border-bottom-right-radius: 60px; /* marge interne à gauche */
+	height: 60px;
+	grid-column: 1/2;
+}
+
+nav a {
+    text-decoration: none;
+	background: #666;
+	color: white;
+	padding: 10px 20px; /* marge interne */
+	margin: 0px 10px;   /* marge externe */
+	border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+
 	
 h1, h2, p {
 	color: #FD6D0E;
 }
 
-footer {
-	color: white;
-}
-
-address {
-	position: fixed;
-	height: 70px;
-	bottom: 0;
-}
-
 h1 {
+	height: 40px;
 	border-spacing: 0px;
     position: absolute;
 	left: 50%;
@@ -34,26 +50,30 @@ h1 {
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 	padding: 5px 30px; /* marge interne */
-	opacity: 70%; /* visibilité de l'élément */
+	opacity: 70%;      /* visibilité de l'élément */
+	grid-row: 2/3;
 }
 
-nav {
-	background-color: #444;
-	padding: 0px 30px; /* marge interne */
-    position: fixed; /* position qui ne bouge pas lorsque l'on navigue sur la page */
-    border-bottom-right-radius: 60px; /* marge interne à gauche */
-	height: 60px;
-}
 
-nav a {
-    text-decoration: none;
-	background: #666;
+
+
+
+footer {
 	color: white;
-	padding: 10px 20px; /* marge interne */
-	margin: 0px 10px; /* marge externe */
-	border-radius: 30px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    font-size: 18px;
 }
 
-nav a:hover {
-    background-color: #555;
+address {
+	background-color: #555;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	padding: 0px 30px;
+	position: fixed;
+	height: 30px;
+	bottom: 0;
 }
