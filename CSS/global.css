@@ -1,6 +1,11 @@
+h1, h2, p, date {
+	color: #FD6D0E;
+}
+
 body {
 	background: linear-gradient(90deg,#000000,#2a2a2a);
-	margin: 0;
+	margin-top: 0;
+	font-size: 18px;
 }
 
 header {
@@ -33,25 +38,13 @@ nav a:hover {
 
 
 
-	
-h1, h2, p {
-	color: #FD6D0E;
-}
+
 
 h1 {
-	height: 40px;
-	border-spacing: 0px;
-    position: absolute;
-	left: 50%;
-	top: 0;
-	transform: translate(-50%, 0%);
+	display: flex;
+	justify-content: center;
 	color: #FD6D0E;
-	background-color: #444;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
 	padding: 5px 30px; /* marge interne */
-	opacity: 70%;      /* visibilité de l'élément */
-	grid-row: 2/3;
 }
 
 
@@ -59,7 +52,6 @@ h1 {
 
 
 footer {
-	color: white;
 	height: 50px;
 	display: flex;
 	flex-direction: row;
@@ -69,7 +61,8 @@ footer {
 }
 
 address {
-	background-color: #555;
+	background-color: #444;
+	color: white;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	padding: 0px 30px;

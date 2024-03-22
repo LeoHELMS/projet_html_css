@@ -1,7 +1,3 @@
-h1,p {
-    color: #FD6D0E;
-}
-
 .article-content {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +16,22 @@ h1,p {
 }
 
 
+dialog {
+    border-color: white;
+    border-radius: 50px;
+}
+
+dialog p {
+    color: black;
+}
+
+dialog button {
+    width: 100%;
+    border-radius: 10px;
+    border-color: black;
+}
+
+
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -32,7 +44,7 @@ form {
 
 label {
     display: block;
-    color: #FD6D0E
+    color: #FD6D0E;
 }
 
 

@@ -5,16 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="présentation du jeu division 2">
         <meta charset="UTF-8">
-        <link href="css\index.css" rel="stylesheet">
         <link rel="stylesheet" href="CSS/global.css">
+        <link rel="stylesheet" href="css\index.css" >
     </head>
     <body>
-
         <header>
             <script src="JS/header.js"></script>
-            <h1>rejoindre la division</h1>
         </header>
         <main>
+            <dialog open>
+            <p>Actualité - Célébration du 5ème anniversaire</p>
+            <form method="dialog">
+                <button autofocus>fermer</button>
+            </form>
+        </dialog>
+        <h1>rejoindre la division</h1>
             <div class="container">
                 <article>
                     <div class="article-content">
@@ -37,7 +42,7 @@
 
                 <p>Bienvenue sur notre site. Utilisez le formulaire ci-dessous pour nous contacter :</p>
 
-                <form action="#" method="post">
+                <form action="#" method="get">
                     <label for="email">Adresse Email :</label>
                     <input type="email" id="email" name="email" required>
 
@@ -50,11 +55,7 @@
                     </label>
                     <input type="submit" value="Envoyer">
                 </form>
-
-
             </div>
-
-
         </main>
         <footer>
             <script src="JS/footer.js"></script>
