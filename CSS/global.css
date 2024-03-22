@@ -21,13 +21,6 @@ header {
 		height: 150px;
 	}
 
-	nav a {
-	float: none;
-	display: grid;
-	text-align: left;
-	}
-
-
 	nav {
 		background-color: #444;
 		 /* marge interne */
@@ -38,12 +31,9 @@ header {
 	}
 
 	nav a {
-		text-decoration: none;
-		background: #666;
-		color: white;
-		padding: 10px 20px; /* marge interne */
-		margin: 5px 5px;   /* marge externe */
-		border-radius: 30px;
+	float: none;
+	display: grid;
+	text-align: left;
 	}
 
 	nav a:hover {
@@ -68,10 +58,12 @@ nav a {
 	padding: 10px 20px; /* Marge interne */
 	margin: 5px 20px; /* Marge externe */
 	border-radius: 30px;
+	transition: .2s ease-in;
 }
 
 header a:hover {
 	background-color: #555;
+	transition: .2s ease-in;
 }
 
 /* Médias requêtes pour la conception réactive */

@@ -84,3 +84,8 @@ input[type="submit"]:hover {
         max-width: none;
     }
 }
+
+figure {
+    text-align: justify;
+  text-justify: inter-word;
+}
