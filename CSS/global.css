@@ -17,7 +17,7 @@ header {
 @media screen and (max-width: 768px) {
 
 	header {
-		margin: 10px; /* Réduire le padding pour les appareils plus petits */
+		margin: 0px; /* Réduire le padding pour les appareils plus petits */
 		height: 150px;
 	}
 
@@ -33,7 +33,8 @@ header {
 		 /* marge interne */
 		position: fixed;  /* position qui ne bouge pas lorsque l'on navigue sur la page */
 		border-bottom-right-radius: 60px; /* marge interne à gauche */
-		height: auto;
+		height: 150px;
+		flex-direction: column;
 	}
 
 	nav a {
@@ -41,7 +42,7 @@ header {
 		background: #666;
 		color: white;
 		padding: 10px 20px; /* marge interne */
-		margin: 5px 500px;   /* marge externe */
+		margin: 5px 5px;   /* marge externe */
 		border-radius: 30px;
 	}
 
@@ -56,21 +57,21 @@ nav {
 	background-color: #444;
 	position: fixed;  /* position qui ne bouge pas lorsque l'on navigue sur la page */
 	border-bottom-right-radius: 60px; /* marge interne à gauche */
-	height: 70px;
+	height: auto;
 	align-items: center;
 }
 
 nav a {
 	text-decoration: none;
-	background: #999;
+	background: #666;
 	color: white;
 	padding: 10px 20px; /* Marge interne */
-	margin: 10px 20px; /* Marge externe */
+	margin: 5px 20px; /* Marge externe */
 	border-radius: 30px;
 }
 
 header a:hover {
-	background-color: #777;
+	background-color: #555;
 }
 
 /* Médias requêtes pour la conception réactive */
