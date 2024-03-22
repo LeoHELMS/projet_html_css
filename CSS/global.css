@@ -11,7 +11,7 @@ body {
 header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	height: auto;
+	height: 20px;
 
 }
 @media screen and (max-width: 768px) {
