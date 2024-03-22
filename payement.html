@@ -55,10 +55,10 @@
                     <input type="password" id="confirm-password">
                 </div><div class="item">
                     <label for="client-phone-number">votre numéro de téléphone :</label>
-                    <input type="tel" id="client-phone-number">
+                    <input type="tel" id="client-phone-number" name="tel" pattern="[0-9]{4}-[0-9]{6}" placeholder="Format : 0664-213564" required>
                 </div><div class="item">
                     <label for="client-banq-number">votre code de carte banquaire :</label>
-                    <input type="number"id="client-banq-number" size="5" min="0001" max="9999" onchange="">
+                    <input type="text"id="client-banq-number" size="5" min="0001" max="9999" onchange="">
                 </div><div class="item">
                     <label for="validate-gcu">j'accepte les CGU</label>
                     <input type="checkbox" id="validate-gcu" required>
